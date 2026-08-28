@@ -51,33 +51,27 @@ Before reaching for refrigerant:
 
 ## Car Wizard — AC not working!!! The CAR WIZARD shows how to easily isolate the problem
 
-Video: https://www.youtube.com/watch?v=bVYUzp8QQ0M
-Source status: **chapter/timestamp sequence checked; not full-transcript checked**
+YouTube: https://www.youtube.com/watch?v=bVYUzp8QQ0M  
+Captioned cut reviewed: https://www.facebook.com/CarWizardFB/videos/ac-not-working-how-to-easily-isolate-the-problem/1385625935727615/  
+Source status: **7:58 captioned Facebook cut reviewed end to end; the 18:56 YouTube cut was not transcript-reviewed**
 
-The useful part of this video is its isolation order. Verified chapter points include:
+The useful structure is the relay boundary:
 
-- about 2:09 — locate/test the A/C compressor relay;
-- about 3:45 — probe the relay socket to separate the control side from the load side;
-- about 6:40 — use a relay bypass as a diagnostic test of compressor-clutch operation;
-- about 8:48 — check whether refrigerant is present;
-- about 15:17 — check mechanically whether the compressor nose is seized.
+**cabin request/control → relay command and fused feed → downstream wiring/ground → clutch coil → compressor mechanism → refrigerant circuit.**
 
-### Diagnostic structure
+The demonstration used a substitute relay switch to command the clutch. A click showed that the downstream wiring, ground, and clutch coil could operate. Separate bench demonstrations then showed a good magnetic clutch engaging and an electrically failed coil doing nothing.
 
-This is a good example of dividing the problem at interfaces:
+Important qualifications:
 
-**Command side → relay → wiring/load side → clutch/compressor → refrigeration circuit.**
+- A clutch click does not prove that the compressor pumps.
+- A mechanically turnable compressor can still have a failed clutch coil.
+- A working coil can still be attached to a seized or non-pumping compressor.
+- A relay bypass is a short, system-specific test, not a repair; it can override valid protection logic.
+- Pressing a service-port valve shows only that some pressure exists and releases refrigerant. It does not measure charge.
+- The source's technically meaningful charge measurement was recovering and weighing the refrigerant against the specified mass.
+- After an internal compressor failure, treat the circuit as potentially contaminated. Which components must be replaced rather than flushed depends on service information, component construction, and warranty requirements.
 
-If the compressor clutch does not engage, do not immediately conclude that the compressor itself is bad. The cause can be upstream: fuse, relay, command, pressure interlock, wiring, or another control condition.
-
-A relay socket is a useful boundary because it lets you ask two separate questions:
-
-- Is the control system asking for A/C?
-- Can the downstream clutch/compressor circuit operate if supplied directly through the intended load path?
-
-### Important caution
-
-Bypassing a relay is a short diagnostic maneuver, not a repair. Pressure switches and control logic may be inhibiting compressor operation for a valid reason. Modern vehicles may also use variable-displacement compressors or clutchless strategies, so the exact test must match the system design.
+See `notes/a7-field-cases.md` for the complete observed sequence and comparison with the Watch Wes Work case.
 
 ---
 
@@ -98,28 +92,44 @@ Do not attribute more specific claims to this video yet. A future transcript pas
 
 ## OldSchoolNoe — 3 ASE A7 Topics That Seem Difficult At First
 
-Video: https://www.youtube.com/watch?v=hhN-y0wfeds
-Source status: **playlist metadata only**
+Video: https://www.youtube.com/watch?v=hhN-y0wfeds  
+Source status: **official video page, description, and creator's pinned post-test comment checked; no transcript or usable playback**
 
-This is clearly exam-oriented and probably useful for converting the repair material into A7 question form, but the current source material does not expose which three topics are covered. No technical claims are recorded from the title alone.
+The page identifies three subjects: determining refrigerant quantity, leak testing, and Section 609 certification material. In a pinned comment dated October 15, 2023, OldSchoolNoe said metering-device material mattered on his test form, he received two leak-detection questions, and his form focused on R-134a rather than R-12, R-1234yf, SAE standards, or Section 609 material.
 
-When transcript material is available, extract:
-
-- the three named topics;
-- any pressure/temperature reasoning;
-- diagnostic distinctions the presenter says ASE commonly tests;
-- any terminology that differs from the repair-oriented videos.
+That is a report about one test experience, not an official or permanent A7 content rule. No spoken technical explanation is attributed to the video yet.
 
 ---
 
 ## Watch Wes Work — Another Shop Fixed It, Now It's More Broken
 
-Video: https://www.youtube.com/watch?v=wEJ3LiJdy5k
-Source status: **playlist metadata only**
+Video: https://www.youtube.com/watch?v=wEJ3LiJdy5k  
+Source status: **11:07 auto-generated transcript checked end to end**
 
-The title suggests a case-study/diagnostic-rework video, but that is not enough evidence to record the repair sequence. Keep it in the A7 source list and transcript-check it before turning it into technical notes.
+A 2006 Ram 2500 received a new compressor elsewhere, still had no working A/C, and arrived labeled as a wiring problem. Earlier faults included clutch-control circuit open, low, and overcurrent.
 
-For a later pass, extract the actual failure chain: original symptom → prior repair → new symptom → measurements → root cause → correction. That structure is more valuable for A7 study than merely recording which part was replaced.
+Wes verified:
+
+- about 58 psi static pressure on a cold day;
+- customer A/C selection true in HVAC data;
+- clutch request true;
+- power present at the clutch connector under the running test;
+- no clutch click when direct power was applied;
+- no clutch air gap because the new clutch was locked engaged;
+- no pressure-transducer rise even though the compressor was being driven.
+
+The evidence contradicted the prior wiring diagnosis. The circuit delivered power, but the new clutch was mechanically stuck and the compressor did not pump. Possible debris contamination was discussed but not confirmed by teardown, and the video did not include the completed repair or post-repair verification.
+
+This case sharpens several distinctions:
+
+- request data is not output verification;
+- connector voltage is not clutch-motion verification;
+- clutch motion is not compressor-output verification;
+- static refrigerant pressure is not a correct-charge or performance test;
+- new parts remain suspects;
+- a mechanically abnormal load may produce current-related circuit faults without bad wiring.
+
+See `notes/a7-field-cases.md` for the full fault chain and the comparison table.
 
 ---
 
