@@ -1,60 +1,78 @@
-# Seed questions
+# Seed diagnostic questions
 
-These are deliberately diagnostic rather than trivia questions. `tests/` must be excluded from retrieval when they are run.
+These are prompts for testing whether corpus retrieval makes an assistant better at real vehicle troubleshooting. `tests/` must be excluded from retrieval.
 
-## A7-001 — request, output, clutch, compressor
+## ac-001 — new compressor, still no A/C
 
-A vehicle with a conventional A/C compressor clutch arrives after another shop installed a new compressor. Scan data shows the driver A/C request is true and the module is requesting the clutch. With the engine running, a test light at the clutch connector shows power. The compressor is being driven, but the refrigerant-pressure readings do not develop a normal high-side/low-side separation.
+A vehicle with a conventional A/C compressor clutch arrives after another shop installed a new compressor. Scan data shows the driver A/C request is true and the module is requesting the clutch. With the engine running, a test light at the clutch connector shows power. The compressor is being driven, but the refrigerant pressures do not develop a normal high-side/low-side separation.
 
-What has actually been established, what remains unproven, and what should be checked next? Do not assume the new compressor is good merely because it is new.
+What has actually been established, what remains unproven, and what should be checked next?
 
-**Purpose:** test whether the corpus improves boundary-by-boundary diagnosis rather than parts replacement.
+**What this tests:** whether the assistant can reason through request → output → clutch → compressor → refrigerant-system response instead of trusting the new part.
 
-## A7-002 — relay as a diagnostic boundary
+## ac-002 — relay as dividing line
 
-On a conventional clutch-type A/C system, explain how the compressor relay/socket can be used to divide the problem into command-side and load-side faults. State what a successful clutch click proves and, just as importantly, what it does **not** prove.
+On a conventional clutch-type A/C system, the A/C does not engage. Explain how the compressor relay/socket can be used as a dividing point between command-side and load-side faults. If bypassing the relay makes the clutch click, what does that prove and what does it still not prove?
 
-**Purpose:** test transfer of a diagnostic method to a generic vehicle.
+**What this tests:** interpretation of an electrical boundary measurement rather than generic relay advice.
 
-## A5-001 — long or spongy brake pedal
+## brakes-001 — long pedal after hydraulic work
 
-A vehicle has excessive brake-pedal travel after hydraulic work. One bleeder appears to have weak flow. Give an efficient diagnostic sequence that distinguishes air, restriction, master-cylinder problems, and downstream circuit problems. Explain how circuit isolation at the master cylinder can help and why pedal feel by itself is not a complete bleeding oracle.
+A vehicle has excessive brake-pedal travel after hydraulic work. One bleeder has noticeably weaker flow than the others. Give the next few tests in the order you would actually perform them. Distinguish air, a restriction, master-cylinder trouble, and a downstream circuit problem.
 
-**Purpose:** test causal localization rather than a generic brake-system checklist.
+**What this tests:** causal localization and useful test ordering.
 
-## A5-002 — hot wheel after brake repair
+## brakes-002 — one wheel gets hot
 
-After brake work, one front wheel becomes abnormally hot and the pedal behavior changes as the vehicle is driven. Before replacing another part, what observations and isolation tests would you use to distinguish a mechanically dragging brake from trapped hydraulic pressure or an upstream hydraulic restriction?
+After brake work, one front wheel becomes much hotter than the other as the vehicle is driven. The brake may release again after the car sits. What observations or isolation tests would distinguish mechanical drag at the wheel from trapped hydraulic pressure or an upstream restriction?
 
-**Purpose:** test whether the corpus helps connect a symptom to a sequence of discriminating tests.
+**What this tests:** whether the assistant chooses measurements that separate mechanical and hydraulic causes before recommending parts.
 
-## A1-001 — source-maturity control
+## engine-001 — piston will not enter bore normally
 
-During piston installation, resistance rises sharply as the piston enters the bore. What should be checked before applying more force? Separate general engine-building knowledge from anything that can honestly be claimed to have been learned from reviewed material in the current ASE corpus.
+During piston installation, resistance rises sharply as the piston begins entering the bore. What should be checked before applying more force? Also state whether the current corpus contains reviewed source material for the answer or only lower-maturity notes.
 
-**Purpose:** A1 currently contains useful study notes whose own status says they were grouped from titles/metadata rather than extracted from reviewed videos. A RAG answer should not launder those notes into transcript-derived evidence.
+**What this tests:** useful mechanical advice plus honesty about evidence maturity.
 
-## A2-001 — empty-corpus negative control
+## can-001 — intermittent module communication loss
 
-An automatic transmission has delayed engagement only after it is fully warm. Give a diagnostic approach, and explicitly state whether the current ASE repository supplied useful A2 evidence for your answer.
+One module intermittently drops off a CAN network while the rest of the vehicle continues communicating. What measurements would you make first, and what would each one help distinguish?
 
-**Purpose:** the A2 branch currently has no developed topic corpus. The RAG condition should not manufacture repository support or show a fake gain merely because retrieval was enabled.
+**What this tests:** whether corpus retrieval eventually improves actual network diagnosis rather than producing a component list.
 
-## A6-001 — empty-corpus negative control
+**Current control condition:** if the relevant corpus area remains undeveloped, retrieval should not be credited with knowledge it did not provide.
 
-A vehicle intermittently loses communication with one module on the CAN network while the rest of the network continues to operate. Describe a sensible diagnostic approach, and explicitly state whether the current A6 branch provided evidence for it.
+## transmission-001 — delayed engagement when hot
 
-**Purpose:** another negative control for false attribution when the target exam branch is undeveloped.
+An automatic transmission engages normally cold but has a pronounced delay selecting Drive after it is fully warm. What information and measurements would you obtain before blaming the transmission assembly itself?
+
+**What this tests:** a weak-corpus negative control. The assistant may know useful things from its base model, but the corpus-assisted run must not pretend the repository supplied evidence that is not there.
+
+## evap-001 — large-leak code after cap replacement
+
+A vehicle repeatedly sets a large-EVAP-leak fault. The fuel cap has already been replaced and the code came back. Give a short diagnostic sequence that uses the system's purge side, vent side, plumbing/filler-neck integrity, and a leak test to localize the problem instead of recommending another cap.
+
+**What this tests:** whether retrieval turns a generic EVAP answer into an ordered system diagnosis.
+
+## general-001 — replacement part did not fix it
+
+A customer says: “The code pointed to the sensor, so I replaced the sensor, but the same code came back. What should I replace next?”
+
+Give a general diagnostic answer that would remain useful across MAF, MAP, throttle-position, crank-position, pressure, and temperature sensors. Be explicit about circuit checks, plausibility against operating conditions, and what a trouble code does not prove.
+
+**What this tests:** transfer from concrete sensor material into a reusable diagnostic habit.
 
 ## Later additions
 
-As transcript-reviewed material grows, add paired questions that test:
+Add questions from actual automotive conversations whenever possible. Good candidates include:
 
-- exact source recall versus transfer to a changed vehicle or symptom;
-- choosing the next measurement from several plausible choices;
-- identifying what a measurement rules out and what it cannot rule out;
-- contradictions between two sources;
-- uncertainty when the transcript is incomplete;
-- whether retrieval can make an answer worse by surfacing low-maturity notes.
+- a symptom plus one or two measurements where the next test matters more than a final diagnosis;
+- a new replacement part that should not be trusted without measurement;
+- an intermittent fault where static continuity is insufficient;
+- a scan-data value that proves a command but not physical output;
+- a case where voltage is present but the circuit cannot carry load;
+- conflicting symptoms that require dividing the system at a connector, relay, hydraulic port, fuse, module, or mechanical linkage;
+- contradictions between two reviewed sources;
+- cases where retrieving low-maturity notes makes the answer worse.
 
-Do not add an answer key to the retrieval corpus. If answer keys or grading rubrics are committed under `tests/`, the retrieval index must exclude the entire directory.
+Do not add answer keys to the retrieval corpus. If rubrics or expected observations are committed under `tests/`, exclude the entire directory from indexing.
