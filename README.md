@@ -1,6 +1,6 @@
 # ASE
 
-Study repository organized around the nine ASE Automobile (A1–A9) certification areas.
+Study repository organized around the nine ASE Automobile certification areas, with source material first split by the subject it actually teaches.
 
 - A1 — Engine Repair
 - A2 — Automatic Transmission/Transaxle
@@ -12,38 +12,23 @@ Study repository organized around the nine ASE Automobile (A1–A9) certificatio
 - A8 — Engine Performance
 - A9 — Light Vehicle Diesel Engines
 
-## Current ingestion
+## Current subject notes
 
-The first documentation pass is concentrated on the two undercar areas already represented in recovered study material:
+- [Brakes](brakes/README.md)
+  - [supplied brakes playlist](brakes/sources/playlist.md)
+  - [recovered/current brake questions](brakes/questions.md)
+  - [long-pedal + hot-wheel case](brakes/cases/001-long-pedal-hot-wheel.md)
+- [Suspension and steering](suspension-steering/README.md)
+  - [recovered suspension/steering videos](suspension-steering/sources/videos.md)
+  - [source-channel provenance](suspension-steering/sources/channels.md)
+  - [recovered suspension/steering questions](suspension-steering/questions.md)
 
-- [A4 — Suspension and Steering](A4/README.md)
-- [A5 — Brakes](A5/README.md)
+## Source rule
 
-Supporting material:
+Put a source under the subject it actually teaches. A mixed study history is not evidence that every recovered video belongs to one playlist.
 
-- [Recovered video-source ledger](sources/videos.md)
-- [Channel/instructor provenance](sources/channels.md)
-- [Recovered study questions and threads](questions/recovered-study-threads.md)
-- [Case 001 — long pedal + pump-up + one very hot wheel](cases/001-long-pedal-hot-wheel.md)
+The supplied YouTube playlist is treated as a **brakes source**. The separately recovered OldSchoolNoe/Hunter/McCuistian/Driver's Therapy suspension and steering videos are retained under **suspension-steering** rather than being thrown away or falsely attributed to the brake playlist.
 
-## Method
-
-The current official ASE task list defines the syllabus. Videos, books, instructors, repair publishers, and real diagnostic cases supply explanations and examples.
-
-The repository should preserve four different kinds of statement instead of flattening them together:
-
-1. **ASE scope** — what the current ASE task list says is testable;
-2. **source claim** — what a particular instructor or source says;
-3. **synthesis** — the mechanical explanation connecting the evidence;
-4. **caution** — something vehicle-specific, incomplete, disputed, or still needing a stronger source.
-
-The target form is not a transcript and not trivia. It is:
+The target form for technical notes is:
 
 **symptom → physical possibilities → discriminating test → interpretation**.
-
-## Current primary sources
-
-- Official 2026 ASE Automobile study guide: https://www.ase.com/uploads/ASE_Automobile_Study_Guide_2026.pdf
-- Requested YouTube playlist: https://youtube.com/playlist?list=PLsL28no_u_qSN_m4HWRO7y5S3ebMUksYy
-
-The present branch contains an exact recovered A4 study corpus from historical watch records, but does not yet claim that the current membership of the playlist has been completely enumerated. See `sources/videos.md` for the distinction.
