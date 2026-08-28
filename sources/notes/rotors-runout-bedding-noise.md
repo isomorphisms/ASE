@@ -2,6 +2,8 @@
 
 Indexing pass over the supplied brake playlist. Grouping is based on titles/metadata; video contents have not yet been transcript-checked.
 
+Detailed wheel-end lesson and drawings: [disc, drum and parking brakes](../brakes-ii/notes/disc-drum-parking.md).
+
 ## Study spine
 
 - Keep lateral runout, disc thickness variation and friction-material transfer/surface variation distinct.

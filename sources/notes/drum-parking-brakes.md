@@ -2,6 +2,8 @@
 
 Indexing pass over the supplied brake playlist. Grouping is based on titles/metadata; video contents have not yet been transcript-checked.
 
+Detailed mechanism lesson and drawings: [disc, drum and parking brakes](../brakes-ii/notes/disc-drum-parking.md).
+
 ## Study spine
 
 - Drum brakes depend on shoe orientation, springs, anchors, adjusters, wheel cylinders and correct drum diameter/surface.

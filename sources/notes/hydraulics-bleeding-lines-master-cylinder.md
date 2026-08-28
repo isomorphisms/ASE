@@ -2,6 +2,8 @@
 
 Indexing pass over the supplied brake playlist. Grouping is based on playlist metadata/titles; these entries are **not** being treated as transcripts or as verified claims from the videos yet.
 
+Detailed mechanism lesson and drawings: [hydraulics, valves, master cylinders and boosters](../brakes-ii/notes/hydraulics-valves-boosters.md).
+
 ## Study spine
 
 - A hydraulic brake system should transmit pressure with very little compressibility; air or vapor increases pedal travel.

@@ -39,11 +39,19 @@ Two plainly unrelated entries were removed from the current study tree rather th
 - `Ts-cZj81bUA` — Exploring ABS Anti-Lock Brakes: A Deep Dive into Function and Faults
 - `-P6OhJjgI6w` — BMW ABS Light Caused By 5DF0 & 5DF1 Fault
 
-## Grouped notes
+## Grouped lessons and video indexes
 
 - [`notes/hydraulics-valves-boosters.md`](notes/hydraulics-valves-boosters.md)
 - [`notes/abs-hcu-stability.md`](notes/abs-hcu-stability.md)
 - [`notes/disc-drum-parking.md`](notes/disc-drum-parking.md)
 - [`notes/diagnosis-components.md`](notes/diagnosis-components.md)
+- [`ram-man-study-sequence.md`](ram-man-study-sequence.md)
 
-Grouping is based on the supplied titles and metadata. It does not claim that every video has been watched, transcribed, or technically verified.
+The four files now contain mechanism-first lessons, diagnostic tables, and
+Mermaid drawings as well as the supplied video indexes. The video grouping is
+still based on titles and metadata. The added lessons are technical syntheses
+around each cluster and do not claim that every video has been watched,
+transcribed, or that every statement made by a presenter has been verified.
+
+The Ram Man sequence records the caption check separately so that a technical
+lesson is never silently relabeled as a transcript summary.

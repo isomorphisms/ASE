@@ -2,6 +2,8 @@
 
 Indexing pass over the supplied brake playlist. Grouping is based on titles/metadata; video contents have not yet been transcript-checked.
 
+Detailed mechanism lesson and drawings: [ABS, HCU and stability control](../brakes-ii/notes/abs-hcu-stability.md).
+
 ## Study spine
 
 - Follow the chain: wheel motion → tone target/encoder → sensor → wiring → module input → control decision → valves/pump → wheel pressure.

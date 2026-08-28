@@ -2,6 +2,8 @@
 
 Indexing pass over the supplied brake playlist. Grouping is based on titles/metadata; video contents have not yet been transcript-checked.
 
+Detailed mechanism lessons and drawings: [hydraulics, valves and boosters](../brakes-ii/notes/hydraulics-valves-boosters.md) and [switch/component diagnosis](../brakes-ii/notes/diagnosis-components.md).
+
 ## Study spine
 
 - Brake assist changes pedal effort; it does not create hydraulic fluid volume or fix excessive clearance.

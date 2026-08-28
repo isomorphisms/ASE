@@ -2,6 +2,8 @@
 
 Indexing pass over the supplied brake playlist. Grouping is based on titles/metadata; video contents have not yet been transcript-checked.
 
+Detailed mechanism lesson and drawings: [diagnosis and component isolation](../brakes-ii/notes/diagnosis-components.md).
+
 ## Study spine
 
 - Describe the symptom first: pedal travel, pedal effort, brake force, pull, noise, vibration, heat, warning lamp, or failure to release.

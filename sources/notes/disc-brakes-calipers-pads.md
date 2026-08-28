@@ -2,6 +2,8 @@
 
 Indexing pass over the supplied brake playlist. Grouping is based on playlist metadata/titles; these entries are **not** being treated as transcripts or as verified claims from the videos yet.
 
+Detailed mechanism lesson and drawings: [disc, drum and parking brakes](../brakes-ii/notes/disc-drum-parking.md).
+
 ## Study spine
 
 - Separate piston binding, slide-pin binding, pad-to-bracket binding, trapped hydraulic pressure, and parking-brake mechanism faults.

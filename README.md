@@ -2,6 +2,15 @@
 
 This is the brake side of the study material.
 
+## Detailed video lessons
+
+- [Hydraulics, valves, master cylinders and boosters](sources/brakes-ii/notes/hydraulics-valves-boosters.md)
+- [ABS, HCU and stability control](sources/brakes-ii/notes/abs-hcu-stability.md)
+- [Disc, drum and parking brakes](sources/brakes-ii/notes/disc-drum-parking.md)
+- [Diagnosis and component isolation](sources/brakes-ii/notes/diagnosis-components.md)
+- [Ram Man study sequence and transcript boundary](sources/brakes-ii/ram-man-study-sequence.md)
+- [Slow source-review notes](sources/reviewed/README.md)
+
 ## Diagnostic frame
 
 Separate four things that are often mixed together:
