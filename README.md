@@ -15,6 +15,7 @@ Study repository organized around the nine ASE Automobile (A1–A9) certificatio
 ## A7 branch material
 
 - `sources/a7-playlist.md` — the supplied five-video A7 playlist with per-video source-review status.
-- `notes/a7-air-conditioning-diagnosis.md` — source-grounded notes on refrigerant charge, oil balance, evacuation/moisture, compressor-control isolation, relay testing, and the remaining videos queued for transcript-level review.
+- `notes/a7-air-conditioning-diagnosis.md` — source-grounded A7 diagnosis notes.
+- `notes/a7-field-cases.md` — detailed Watch Wes Work and Car Wizard compressor-control cases, including what each test proved, what it did not prove, and unresolved repair claims.
 
-The notes distinguish full-transcript, chapter-level, description-only, and metadata-only sources rather than treating playlist membership as evidence for technical claims.
+The notes distinguish end-to-end transcript/caption review, partial-cut review, page-description review, and metadata-only sources rather than treating playlist membership as evidence for technical claims.
