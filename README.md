@@ -21,6 +21,12 @@ These exist when a topic is easier to find by the thing being diagnosed than by 
 - [Large EVAP leak](https://github.com/isomorphisms/ASE/tree/large-evap-leak) — EVAP system operation, leak diagnosis, purge/vent valves, filler-neck faults
 - [Engine sensors](https://github.com/isomorphisms/ASE/tree/engine-sensors) — crankshaft position, MAF, TPS, MAP, ECU communication, and CAN diagnosis
 
+## Corpus tests
+
+- [`tests/`](https://github.com/isomorphisms/ASE/tree/main/tests) — paired same-model baseline vs RAG-assisted tests, including controls for weak or empty corpus areas
+
+The test directory is not study evidence and should be excluded from retrieval indexes.
+
 ## Working rule
 
 Keep raw source lists separate from study notes. Playlist titles and metadata may be indexed immediately, but they are not treated as transcript-checked evidence. As material is actually reviewed, turn it into concrete diagnostic notes and cross-check important claims against strong service information.
