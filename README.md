@@ -1,26 +1,20 @@
-# ASE study repository
+# A4 — suspension and steering
 
-`main` is the map. The study material lives on branches.
+This branch is part of the automotive diagnosis corpus. It is not an ASE study guide.
 
-## ASE exam areas
+The useful material here should make an assistant better at answering real suspension and steering questions: noises over bumps, looseness, pull/wander, tire wear, poor return-to-center, wheel-bearing noise, ride-height problems, and deciding which joint or component to inspect next.
 
-- [A1 — Engine Repair](https://github.com/isomorphisms/ASE/tree/a1-engine-repair)
-- [A2 — Automatic Transmission/Transaxle](https://github.com/isomorphisms/ASE/tree/a2-automatic-transmission-transaxle)
-- [A3 — Manual Drivetrain & Axles](https://github.com/isomorphisms/ASE/tree/a3-manual-drivetrain-axles)
-- [A4 — Suspension & Steering](https://github.com/isomorphisms/ASE/tree/a4-suspension-steering)
-- [A5 — Brakes](https://github.com/isomorphisms/ASE/tree/a5-brakes)
-- [A6 — Electrical/Electronic Systems](https://github.com/isomorphisms/ASE/tree/a6-electrical-electronic-systems)
-- [A7 — Heating & Air Conditioning](https://github.com/isomorphisms/ASE/tree/a7-heating-air-conditioning)
-- [A8 — Engine Performance](https://github.com/isomorphisms/ASE/tree/a8-engine-performance)
-- [A9 — Light Vehicle Diesel Engines](https://github.com/isomorphisms/ASE/tree/a9-light-vehicle-diesel-engines)
+## Current reviewed material
 
-## Problem- and component-focused study branches
+- `sources/reviewed/1a-auto-front-end-diagnosis.md` — transcript-reviewed videos covering ball-joint play, tie-rod play, wheel-bearing play/noise, sway-bar links, and shocks/struts.
+- `notes/front-end-diagnostic-patterns.md` — reusable diagnostic lessons distilled from those sources and cross-checked where the source video overgeneralizes.
 
-These exist when a topic is easier to find by the thing being diagnosed than by remembering an ASE exam number.
+## Acquisition queue
 
-- [Large EVAP leak](https://github.com/isomorphisms/ASE/tree/large-evap-leak) — EVAP system operation, leak diagnosis, purge/vent valves, filler-neck faults
-- [Engine sensors](https://github.com/isomorphisms/ASE/tree/engine-sensors) — crankshaft position, MAF, TPS, MAP, ECU communication, and CAN diagnosis
+- `sources/video-queue.md` — recovered OldSchoolNoe, Hunter, and other suspension/steering videos. These remain acquisition targets until the spoken material or captions have actually been reviewed.
 
 ## Working rule
 
-Keep raw source lists separate from study notes. Playlist titles and metadata may be indexed immediately, but they are not treated as transcript-checked evidence. As material is actually reviewed, turn it into concrete diagnostic notes and cross-check important claims against strong service information.
+A wheel that moves when shaken is not yet a diagnosis. Watch the relevant parts while the load is applied and identify the **relative motion**: knuckle versus control arm, tie-rod stud/socket versus knuckle, rotor/hub versus knuckle, and so on.
+
+Likewise, do not turn a generic inspection trick into a universal procedure. Ball-joint loading and acceptable play depend on suspension design and service information; a light oil film on a shock/strut is not automatically the same thing as a failed leaking unit.
