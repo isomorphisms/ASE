@@ -2,6 +2,8 @@
 
 Indexing pass over the supplied brake playlist. Grouping is based on titles/metadata; video contents have not yet been transcript-checked.
 
+Mixed brake/suspension videos are preserved in [`../playlist.md`](../playlist.md) but excluded from this active brake note until their brake content is individually reviewed.
+
 ## Study spine
 
 - Describe the symptom first: pedal travel, pedal effort, brake force, pull, noise, vibration, heat, warning lamp, or failure to release.
@@ -20,7 +22,6 @@ Indexing pass over the supplied brake playlist. Grouping is based on titles/meta
 - **076. What's the Easiest Way to Take a Bearing Race off a Car or Truck Wheel Hub? We'll Show You!** — 1A Auto: Repair Tips & Secrets Only Mechanics Know — 7:58 — `MqLx0SC800I` — https://www.youtube.com/watch?v=MqLx0SC800I
 - **079. [title unavailable in playlist snapshot]** — [channel unavailable] — duration unavailable — `av73CXPl4eM` — https://www.youtube.com/watch?v=av73CXPl4eM
 - **092. 3 Steps You May Be Overlooking When Doing A Brake Job!** — Royalty Auto Service — 15:49 — `FtJXD4KD1dI` — https://www.youtube.com/watch?v=FtJXD4KD1dI
-- **104. Car or truck pulling to one side but front end is fine. Tips to identify brake or suspension issue** — 1A Auto: Repair Tips & Secrets Only Mechanics Know — 15:08 — `aU37qVvg_Ow` — https://www.youtube.com/watch?v=aU37qVvg_Ow
 - **105. Seeping or Leaking Rear Axle Seal on Your Car or Truck? Replace it Before the Brakes Get Damaged!** — 1A Auto: Repair Tips & Secrets Only Mechanics Know — 3:38 — `hZwlwrMHjlc` — https://www.youtube.com/watch?v=hZwlwrMHjlc
 - **107. Air Brakes Explained in 23 Seconds** — Collins Trucking Company — 0:23 — `9l_S2EbzWAM` — https://www.youtube.com/watch?v=9l_S2EbzWAM
 - **108. Car or Truck Brake Pedal Doesn't Feel Right? Simple Steps to Find the Problem in Your Brake System** — 1A Auto: Repair Tips & Secrets Only Mechanics Know — 5:45 — `DRlw9zgmUEg` — https://www.youtube.com/watch?v=DRlw9zgmUEg
@@ -33,7 +34,6 @@ Indexing pass over the supplied brake playlist. Grouping is based on titles/meta
 - **144. How to Service Car Brakes** — speedkar99 — 8:12 — `rPefa_bT1tQ` — https://www.youtube.com/watch?v=rPefa_bT1tQ
 - **145. Brake Inspection Tips with Raybestos Brakes** — Raybestos Brakes — 3:10 — `7dcMALEKBCc` — https://www.youtube.com/watch?v=7dcMALEKBCc
 - **151. Brake Binding – How to Find The Cause and Fix it!** — ECU TESTING — 3:35 — `RrSn0M7n9eE` — https://www.youtube.com/watch?v=RrSn0M7n9eE
-- **156. Chevy Silverado - Undoing DIY Repairs - Numerous Brake and Suspension Issues - Part 1** — Watch Wes Work — 48:13 — `gH0Xxwx5hrk` — https://www.youtube.com/watch?v=gH0Xxwx5hrk
 - **161. Why Is Your Brake Pedal Feeling Spongy?** — 1A Auto: Repair Tips & Secrets Only Mechanics Know — 4:54 — `utqUOWRP2Ic` — https://www.youtube.com/watch?v=utqUOWRP2Ic
 - **165. Brake Pedal Problems: Low, Squishy or Goes To The Floor in Your Car or Truck? Let's BRAKE It Down** — 1A Auto: Repair Tips & Secrets Only Mechanics Know — 11:55 — `m67qpYeAV8Q` — https://www.youtube.com/watch?v=m67qpYeAV8Q
 - **167. Soft Brakes? Pedal to the Floor? 5 Common Car Brake Problems to Check!** — 1A Auto: Repair Tips & Secrets Only Mechanics Know — 5:04 — `0Cf8mJ83buo` — https://www.youtube.com/watch?v=0Cf8mJ83buo
