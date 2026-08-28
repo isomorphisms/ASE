@@ -1,6 +1,6 @@
 # ASE
 
-Study repository organized around the nine ASE Automobile certification areas, with source material first split by the subject it actually teaches.
+Study repository organized around the nine ASE Automobile certification areas.
 
 - A1 — Engine Repair
 - A2 — Automatic Transmission/Transaxle
@@ -12,23 +12,19 @@ Study repository organized around the nine ASE Automobile certification areas, w
 - A8 — Engine Performance
 - A9 — Light Vehicle Diesel Engines
 
-## Current subject notes
+## Current work — brakes
 
-- [Brakes](brakes/README.md)
-  - [supplied brakes playlist](brakes/sources/playlist.md)
-  - [recovered/current brake questions](brakes/questions.md)
-  - [long-pedal + hot-wheel case](brakes/cases/001-long-pedal-hot-wheel.md)
-- [Suspension and steering](suspension-steering/README.md)
-  - [recovered suspension/steering videos](suspension-steering/sources/videos.md)
-  - [source-channel provenance](suspension-steering/sources/channels.md)
-  - [recovered suspension/steering questions](suspension-steering/questions.md)
+Primary material for the current pass:
 
-## Source rule
+- [Brakes notes](brakes/README.md)
+- [Supplied YouTube playlist](brakes/sources/playlist.md)
+- [Brake questions](brakes/questions.md)
+- [Long-pedal + hot-wheel diagnostic case](brakes/cases/001-long-pedal-hot-wheel.md)
 
-Put a source under the subject it actually teaches. A mixed study history is not evidence that every recovered video belongs to one playlist.
-
-The supplied YouTube playlist is treated as a **brakes source**. The separately recovered OldSchoolNoe/Hunter/McCuistian/Driver's Therapy suspension and steering videos are retained under **suspension-steering** rather than being thrown away or falsely attributed to the brake playlist.
-
-The target form for technical notes is:
+The working form for technical notes is:
 
 **symptom → physical possibilities → discriminating test → interpretation**.
+
+## Archive
+
+Material reconstructed from older watch/search history is kept out of the main study tree under [`archive/`](archive/README.md). It is supplemental and should not be treated as primary material unless individually verified.
