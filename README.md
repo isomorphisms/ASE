@@ -1,8 +1,10 @@
-# ASE study repository
+# Automotive diagnosis corpus
 
-`main` is the map. The study material lives on branches.
+This repository exists to make an AI assistant materially better at diagnosing and explaining vehicle problems. It is **not** an ASE test-prep guide for people.
 
-## ASE exam areas
+ASE A1–A9 remain useful as broad coverage buckets because they give the corpus a familiar automotive taxonomy. Problem-, component-, and symptom-focused branches are equally important when they are better retrieval keys.
+
+## ASE coverage buckets
 
 - [A1 — Engine Repair](https://github.com/isomorphisms/ASE/tree/a1-engine-repair)
 - [A2 — Automatic Transmission/Transaxle](https://github.com/isomorphisms/ASE/tree/a2-automatic-transmission-transaxle)
@@ -14,19 +16,39 @@
 - [A8 — Engine Performance](https://github.com/isomorphisms/ASE/tree/a8-engine-performance)
 - [A9 — Light Vehicle Diesel Engines](https://github.com/isomorphisms/ASE/tree/a9-light-vehicle-diesel-engines)
 
-## Problem- and component-focused study branches
-
-These exist when a topic is easier to find by the thing being diagnosed than by remembering an ASE exam number.
+## Problem and component retrieval branches
 
 - [Large EVAP leak](https://github.com/isomorphisms/ASE/tree/large-evap-leak) — EVAP system operation, leak diagnosis, purge/vent valves, filler-neck faults
 - [Engine sensors](https://github.com/isomorphisms/ASE/tree/engine-sensors) — crankshaft position, MAF, TPS, MAP, ECU communication, and CAN diagnosis
 
-## Corpus tests
+## What belongs in the corpus
 
-- [`tests/`](https://github.com/isomorphisms/ASE/tree/main/tests) — paired same-model baseline vs RAG-assisted tests, including controls for weak or empty corpus areas
+The valuable unit is not a link. Prefer a chain like:
 
-The test directory is not study evidence and should be excluded from retrieval indexes.
+`source → transcript/captions → source-grounded summary → diagnostic lessons → reusable failure pattern`
+
+For a diagnostic source, preserve especially:
+
+- complaint and repair history;
+- measurements and observations in the order they occurred;
+- what each observation establishes and what it does not establish;
+- the next discriminating test and why it was chosen;
+- confirmed fault versus suspicion;
+- repair and post-repair verification when available;
+- lessons that transfer to a different vehicle without pretending all systems are identical.
+
+Keep full transcripts or captions when obtainable. Summaries and lessons are derived artifacts, not replacements for the source text.
+
+Raw URL/title/playlist metadata may be kept for acquisition, but it is low-maturity material and must never be presented as though the source itself was reviewed.
+
+## Assistant competence tests
+
+- [`tests/`](https://github.com/isomorphisms/ASE/tree/main/tests) — paired same-model baseline vs corpus-assisted automotive diagnosis tests
+
+`tests/` is evaluation material, not automotive evidence, and must be excluded from retrieval indexes.
 
 ## Working rule
 
-Keep raw source lists separate from study notes. Playlist titles and metadata may be indexed immediately, but they are not treated as transcript-checked evidence. As material is actually reviewed, turn it into concrete diagnostic notes and cross-check important claims against strong service information.
+Optimize for the questions a mechanic, owner, or technician might actually ask an assistant: *What does this measurement rule out? What should I test next? Why did the new part not fix it? Is this electrical, hydraulic, mechanical, control-side, or load-side?*
+
+Generic prose that does not improve those answers is low value. Concrete source-backed diagnostic traces are high value.
