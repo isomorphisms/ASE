@@ -1,13 +1,16 @@
-# ASE
+# Engine sensors
 
-Study repository organized around the nine ASE Automobile (A1–A9) certification areas.
+Study branch for engine-management sensors and closely related control/communication diagnosis pulled out of the mixed Brakes II source.
 
-- A1 — Engine Repair
-- A2 — Automatic Transmission/Transaxle
-- A3 — Manual Drivetrain & Axles
-- A4 — Suspension & Steering
-- A5 — Brakes
-- A6 — Electrical/Electronic Systems
-- A7 — Heating & Air Conditioning
-- A8 — Engine Performance
-- A9 — Light Vehicle Diesel Engines
+## Current source set
+
+- crankshaft position sensor
+- mass-air-flow (MAF) sensor
+- throttle-position sensor (TPS)
+- manifold-absolute-pressure (MAP) sensor
+- ECU no-communication diagnosis
+- CAN-bus diagnosis
+
+The Disney tax-district and Elton John videos from the mixed playlist were discarded rather than carried into this branch.
+
+See [`sources/urls.txt`](sources/urls.txt) and [`sources/notes.md`](sources/notes.md).
