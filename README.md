@@ -1,26 +1,19 @@
-# ASE study repository
+# Mechatronics study branch
 
-`main` is the map. The study material lives on branches.
+This branch collects material that transfers across industrial maintenance, controls, electrical work, motors, sensors, actuators, machinery, and practical mechatronics. It is not restricted to automotive ASE material.
 
-## ASE exam areas
+## EXPLORIST.life — electrical fundamentals
 
-- [A1 — Engine Repair](https://github.com/isomorphisms/ASE/tree/a1-engine-repair)
-- [A2 — Automatic Transmission/Transaxle](https://github.com/isomorphisms/ASE/tree/a2-automatic-transmission-transaxle)
-- [A3 — Manual Drivetrain & Axles](https://github.com/isomorphisms/ASE/tree/a3-manual-drivetrain-axles)
-- [A4 — Suspension & Steering](https://github.com/isomorphisms/ASE/tree/a4-suspension-steering)
-- [A5 — Brakes](https://github.com/isomorphisms/ASE/tree/a5-brakes)
-- [A6 — Electrical/Electronic Systems](https://github.com/isomorphisms/ASE/tree/a6-electrical-electronic-systems)
-- [A7 — Heating & Air Conditioning](https://github.com/isomorphisms/ASE/tree/a7-heating-air-conditioning)
-- [A8 — Engine Performance](https://github.com/isomorphisms/ASE/tree/a8-engine-performance)
-- [A9 — Light Vehicle Diesel Engines](https://github.com/isomorphisms/ASE/tree/a9-light-vehicle-diesel-engines)
+EXPLORIST.life teaches mobile, marine, and off-grid electrical systems, but much of the basic electrical workmanship transfers directly to mechatronics.
 
-## Problem- and component-focused study branches
+- [`notes/explorist-life-electrical-terminology.md`](notes/explorist-life-electrical-terminology.md) — volts, amps, watts, watt-hours, amp-hours, AC/DC, power arithmetic, basic system components, and diagnostic habits
+- [`notes/explorist-life-wire-basics.md`](notes/explorist-life-wire-basics.md) — conductor construction, AWG, ampacity, derating, voltage drop, fusing, terminal compatibility, and troubleshooting
+- [`sources/explorist-life-wire-terminals.md`](sources/explorist-life-wire-terminals.md) — supplied Wire Terminals playlist: cutting, stripping, heat shrink, lugs, ring terminals, PV and Anderson connectors, ferrules, splices, wire management, spring terminals, and tools
 
-These exist when a topic is easier to find by the thing being diagnosed than by remembering an ASE exam number.
+The wire-terminal playlist source currently has 13 entries even though the videos are numbered as a 14-part series. Source metadata is kept distinct from transcript-reviewed technical notes.
 
-- [Large EVAP leak](https://github.com/isomorphisms/ASE/tree/large-evap-leak) — EVAP system operation, leak diagnosis, purge/vent valves, filler-neck faults
-- [Engine sensors](https://github.com/isomorphisms/ASE/tree/engine-sensors) — crankshaft position, MAF, TPS, MAP, ECU communication, and CAN diagnosis
+## Source policy
 
-## Working rule
+Use source-specific lessons as raw material, but separate the physical principles from source-specific codes and installation contexts. EXPLORIST.life frequently works under mobile/marine/off-grid conventions such as ABYC; industrial machines may instead require NEC, NFPA 79, UL 508A, OEM requirements, or other standards.
 
-Keep raw source lists separate from study notes. Playlist titles and metadata may be indexed immediately, but they are not treated as transcript-checked evidence. As material is actually reviewed, turn it into concrete diagnostic notes and cross-check important claims against strong service information.
+As videos are reviewed, promote useful claims into concrete notes and keep title/playlist metadata clearly marked when it has not been transcript-checked.
