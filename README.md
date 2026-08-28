@@ -37,15 +37,15 @@ For a diagnostic source, preserve especially:
 - repair and post-repair verification when available;
 - lessons that transfer to a different vehicle without pretending all systems are identical.
 
-Keep full transcripts or captions when obtainable. Summaries and lessons are derived artifacts, not replacements for the source text.
+Keep full transcripts or captions when obtainable and appropriate to store. Summaries and lessons are derived artifacts, not replacements for source review.
 
 Raw URL/title/playlist metadata may be kept for acquisition, but it is low-maturity material and must never be presented as though the source itself was reviewed.
 
-## Assistant competence tests
+## Tests
 
-- [`tests/`](https://github.com/isomorphisms/ASE/tree/main/tests) — paired same-model baseline vs corpus-assisted automotive diagnosis tests
+- [`tests/`](https://github.com/isomorphisms/ASE/tree/main/tests) — a lightweight place to preserve an occasional before/after check when one is worth keeping.
 
-`tests/` is evaluation material, not automotive evidence, and must be excluded from retrieval indexes.
+`tests/` is not a training gym or benchmark project and must be excluded from retrieval indexes.
 
 ## Working rule
 
