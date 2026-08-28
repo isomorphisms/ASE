@@ -1,10 +1,10 @@
-# A8 — Engine Performance
+# Large EVAP leak
 
-This branch collects the A8 engine-performance study material.
+Dedicated branch for the supplied **EVAP leak** study material.
 
-## EVAP
+This is intentionally separate from the A8 engine-performance branch so the material is easy to find by the problem being studied.
 
-The first supplied A8 source is the **EVAP leak** playlist with 9 videos. Two uploaded JSON files represented the same playlist, so the material is stored once here.
+The supplied playlist contains 9 videos. Two uploaded JSON files represented the same playlist, so the material is stored once here.
 
 - [`sources/evap/urls.txt`](sources/evap/urls.txt) — raw YouTube URLs, one per line
 - [`sources/evap/playlist.md`](sources/evap/playlist.md) — title/channel/duration/video-ID index
@@ -12,4 +12,4 @@ The first supplied A8 source is the **EVAP leak** playlist with 9 videos. Two up
 - [`sources/evap/notes/purge-vent-valves.md`](sources/evap/notes/purge-vent-valves.md)
 - [`sources/evap/notes/leaks-filler-neck.md`](sources/evap/notes/leaks-filler-neck.md)
 
-The grouped notes distinguish playlist-derived metadata from general A8 study framing. They do not pretend that titles are transcripts or that every video-specific claim has already been independently verified.
+The grouped notes distinguish playlist-derived metadata from general diagnostic framing. They do not treat titles as transcripts or pretend that every video-specific claim has already been independently verified.
